@@ -43,30 +43,30 @@
 
         <section class="hero-section clearfix darker-bg">
           <div class="wrapper-960">
-            <h1 class="">
+            <h1 class="logo-wrapper">
               <span class="ir ofi-logo-main">OFI.com.co</span><span class="tagline">- PARA EMPRESAS -</span>
             </h1>
 
             <div class="main-message bordered-box">
-              <h2 class="">La gesti&oacute;n de los suministros para tu negocio ahora es</h2>
-              <h3 class="swap-message"><strong class="brand-font_color">M&aacute;s</strong> <strong class="swap-word">F&aacute;cil</strong></h3>
-              <a href="" class="cta-message">Quiero saber c&oacute;mo</a>
+              <h2 class="main-copy">La gesti&oacute;n de los suministros para tu negocio ahora es</h2>
+              <h3 class="swap-message"><span class="brand-font_color">M&aacute;s</span> <span class="swap-word">F&aacute;cil</span>.</h3>
+              <a href="" class="cta-message brand-font_color">Quiero saber c&oacute;mo</a>
             </div> <!-- /.main-message -->
 
             <div class="quick-register">
-              <div class="input-wrapper">
-                <input type="text" placeholder="nombre de tu empresa">
-              </div> <!-- /.input-wrapper -->
+              <label for="company_name2" class="input-wrapper width-company_name">
+                <input id="company_name2" type="text" placeholder="nombre de tu empresa">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
-                <input type="text" placeholder="n&uacute;mero telef&oacute;nico">
-              </div> <!-- /.input-wrapper -->
+              <label for="phone2" class="input-wrapper width-phone">
+                <input id="phone2" type="text" placeholder="n&uacute;mero telef&oacute;nico">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
-                <input type="email" placeholder="email">
-              </div> <!-- /.input-wrapper -->
+              <label for="email2" class="input-wrapper width-email">
+                <input id="email2" type="email" placeholder="email">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
+              <div class="input-wrapper cta-wrapper">
                 <a href="#" class="btn btn-primary" alt="Registrate Gratis">Registrate Gratis</a>
               </div> <!-- /.input-wrapper -->
             </div> <!-- /.quick-register -->
@@ -132,19 +132,19 @@
             <h3 class="swap-message"><strong class="brand-font_color">M&aacute;s</strong> <strong class="swap-word">F&aacute;cil</strong></h3>
 
             <div class="quick-register">
-              <div class="input-wrapper">
-                <input type="text" placeholder="nombre de tu empresa">
-              </div> <!-- /.input-wrapper -->
+              <label for="company_name1" class="input-wrapper width-company_name">
+                <input id="company_name1" type="text" placeholder="nombre de tu empresa">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
-                <input type="text" placeholder="n&uacute;mero telef&oacute;nico">
-              </div> <!-- /.input-wrapper -->
+              <label for="phone1" class="input-wrapper width-phone">
+                <input id="phone1" type="text" placeholder="n&uacute;mero telef&oacute;nico">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
-                <input type="email" placeholder="email">
-              </div> <!-- /.input-wrapper -->
+              <label for="email1" class="input-wrapper width-email">
+                <input id="email1" type="email" placeholder="email">
+              </label> <!-- /.input-wrapper -->
 
-              <div class="input-wrapper">
+              <div class="input-wrapper cta-wrapper">
                 <a href="#" class="btn btn-primary" alt="Empieza ahora">Empieza ahora</a>
               </div> <!-- /.input-wrapper -->
             </div> <!-- /.quick-register -->
@@ -166,7 +166,7 @@
                   <li> <a href="#" class="share-icon ir icon-li">linkedin</a> </li>
                 </ul>
 
-                <form action="">
+                <form action="" class="footer-contact-form">
                   <fieldset>
                     <div class="input-wrapper">
                       <input type="text" placeholder="tu nombre">
@@ -180,8 +180,8 @@
                       <textarea name="" id="" placeholder="escribe tu mensaje"></textarea>
                     </div> <!-- /.input-wrapper -->
 
-                    <div class="input-wrapper">
-                      <input href="#" class="btn btn-primary" alt="Enviar Mensaje">Enviar Mensaje</input>
+                    <div class="input-wrapper cta-wrapper">
+                      <input type="submit" class="btn btn-primary" value="Enviar Mensaje" />
                     </div> <!-- /.input-wrapper -->
                   </fieldset>
                 </form>
@@ -196,6 +196,102 @@
         </section>
       </div> <!-- /.slide-container -->
     </div> <!-- /.site-container -->
+
+    <div class="modal-container">
+      <div class="modal-overlay"></div> <!-- /.modal-overlay -->
+      <div class="modal-popup">
+        <a href="#" class="btn btn-modal_close" alt="Cerrar">X</a>
+        <div class="modal-error_message">El registro no pudo ser realizado, debido a errores en la información del formulario, por favor corríjelos y vuelve a intentarlo.</div>
+        <div class="modal-content">
+          <div class="logo-wrapper">
+            <span class="ir ofi-logo-main">OFI.com.co</span><span class="tagline">- PARA EMPRESAS -</span>
+          </div> <!-- /.logo-wrapper -->
+
+          <h2 class="modal-title">Registra tu negocio ahora y empieza a disfrutar del programa especial de <strong>OFI</strong> para empresas, es gratis.</h2>
+
+          <form action="" class="register-form">
+            <fieldset>
+              <span class="required_fields_message"><sup>*</sup> campos obligatorios</span>
+              <legend>SOBRE TI</legend>
+
+              <div class="form-row">
+                <div class="form-cell width-register_name">
+                  <label for="register_name" class="input-wrapper required-field">
+                    <input id="register_name" type="text" placeholder="nombre">
+                  </label>
+                  <span class="form-field-error_message">la información de nombre no puede estar vacia.</span>
+                </div> <!-- /.form-cell -->
+
+                <div class="form-cell width-register_last_name">
+                  <label for="register_last_name" class="input-wrapper">
+                    <input id="register_last_name" type="text" placeholder="apellido">
+                  </label>
+                  <span class="form-field-error_message"></span>
+                </div> <!-- /.form-cell -->
+                
+              </div> <!-- /.form-row -->
+
+              <div class="form-row">
+                <div class="form-cell width-register_phone">
+                  <label for="register_phone" class="input-wrapper">
+                    <input id="register_phone" type="text" placeholder="numero telefonico">
+                  </label>
+                  <span class="form-field-error_message"></span>
+                </div> <!-- /.form-cell -->
+
+                <div class="form-cell width-register_email">
+                  <label for="register_email" class="input-wrapper">
+                    <input id="register_email" type="email" placeholder="email">
+                  </label>
+                  <span class="form-field-error_message">error en el correo electronico</span>
+                </div> <!-- /.form-cell -->
+                
+              </div> <!-- /.form-row -->
+            </fieldset>
+
+            <fieldset>
+              <legend>SOBRE TU EMPRESA</legend>
+
+              <div class="form-row">
+                <div class="form-cell width-register_company_name">
+                  <label for="register_company__name" class="input-wrapper">
+                    <input id="register_company__name" type="text" placeholder="nombre de tu empresa">
+                  </label>
+                  <span class="form-field-error_message"></span>
+                </div> <!-- /.form-cell -->
+
+                <div class="form-cell width-register_company_nit">
+                  <label for="register_company_nit" class="input-wrapper">
+                    <input id="register_company_nit" type="text" placeholder="NIT">
+                  </label>
+                  <span class="form-field-error_message"></span>
+                </div> <!-- /.form-cell -->
+                
+              </div> <!-- /.form-row -->
+
+              <div class="form-row">
+                <div class="form-cell width-register_company_info">
+                  <label for="register_company_info" class="input-wrapper">
+                    <textarea id="register_company_info" type="text" placeholder="quieres contarnos algo más acerca de tu empresa"></textarea>
+                  </label>
+                  <span class="form-field-error_message"></span>
+                </div> <!-- /.form-cell -->
+
+              </div> <!-- /.form-row -->
+            </fieldset>
+
+            <p class="form-opt_in">
+              <label for="register_opt_in"><input id="register_opt_in" type="checkbox" /> Sí, quiero recibir e-mails con las últimas novedades, productos y servicios especiales para socios.</label>
+            </p>
+
+            <div class="input-wrapper cta-wrapper">
+              <input type="submit" class="btn btn-primary" value="Quiero Iniciar" />
+            </div> <!-- /.input-wrapper -->
+          </form>
+
+        </div> <!-- /.modal-content -->
+      </div> <!-- /.modal-popup -->
+    </div> <!-- /.modal-container -->
 
     <script src="js/main.js"></script>
 
