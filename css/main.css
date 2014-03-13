@@ -879,8 +879,13 @@ section {
     margin: 0 0 10px;
     width: 100%;
   }
-  .footer-contact-form .input-wrapper input {
-    
+  .footer-contact-form .input-wrapper:hover {
+    background-color: #333;
+    border-color: #333; 
+  }
+  .footer-contact-form .input-wrapper input,
+  .footer-contact-form .input-wrapper textarea {
+    color: #eee;
   }
   .footer-contact-form .textarea-wrapper {
     height: 130px;
