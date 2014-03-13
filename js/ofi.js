@@ -45,7 +45,7 @@
   }
   function scrollToElement(target) {
     
-    var topoffset = 30,
+    var topoffset = 90,
         speed = 600,
         destination = $( target ).offset().top - topoffset;
 
