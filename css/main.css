@@ -231,10 +231,12 @@ button.btn-primary:hover {
   background-color: #FF4A1E;
 }
 .side-menu .btn-modal_close {
-    color: #999;
-    background-color: #444;
-  
+  color: #999;
+  background-color: #444;
 }
+  .side-menu .btn-modal_close:hover {
+    background-color: #A62E00;
+  }
 
 
 /* Sections */
