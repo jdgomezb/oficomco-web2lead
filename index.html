@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>OFI.com.co</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -22,23 +22,29 @@
     <![endif]-->
   </head>
   <body>
-    <div class="site-container">
+    <div id="site-container">
       <div class="side-menu">
+        <a href="#" class="btn btn-modal_close jsCloseMenu" title="Cerrar">X</a>
+
+        <h2 class="header-logo">
+          <span class="ir ofi-logo-chopped">OFI.com.co</span><span class="tagline">- PARA EMPRESAS -</span>
+        </h2>
         
       </div>
       <div class="slide-container">
+        <a id="top"></a>
         <header class="header-container clearfix">
 
           <nav class="col-right main-nav">
             <ul>
-              <li><a href="#beneficios" title="Beneficios">Beneficios</a></li>
-              <li><a href="#contacto" title="Contacto">Contacto</a></li>
-              <li><a href="#registro" title="Registro" class="brand-font_color">Registro</a></li>
+              <li><a href="#beneficios" title="Beneficios" class="jsScrollTo">Beneficios</a></li>
+              <li><a href="#contacto" title="Contacto" class="jsScrollTo">Contacto</a></li>
+              <li><a href="#registro" title="Registro" class="brand-font_color jsOpenModal jsToggleCTA">Registro</a></li>
             </ul>
           </nav>
 
           <ul class="col-left sub-nav">
-            <li><a href="#" title="Abrir Men&uacute;" class="ir btn-open_menu">Abrir Men&uacute;</a></li>
+            <li><a href="#" title="Abrir Men&uacute;" class="ir btn-open_menu jsOpenMenu">Abrir Men&uacute;</a></li>
             <li><a href="#" title="Ir a OFI.com.co para individuos">Ir a OFI.com.co para individuos</a></li>
           </ul>
 
@@ -48,7 +54,7 @@
 
         </header> <!-- /.header-container -->
 
-        <section class="hero-section clearfix darker-bg">
+        <section class="hero-section clearfix darker-bg jsMoveBg">
           <div class="wrapper-960">
             <h1 class="logo-wrapper">
               <span class="ir ofi-logo-main">OFI.com.co</span><span class="tagline">- PARA EMPRESAS -</span>
@@ -57,7 +63,7 @@
             <div class="main-message bordered-box">
               <h2 class="main-copy">La gesti&oacute;n de los suministros para tu negocio ahora es</h2>
               <h3 class="swap-message"><span class="brand-font_color">M&aacute;s</span> <span class="swap-word">F&aacute;cil</span>.</h3>
-              <a href="" class="cta-message brand-font_color">Quiero saber c&oacute;mo</a>
+              <a href="#beneficios" class="cta-message brand-font_color jsScrollTo">Quiero saber c&oacute;mo</a>
             </div> <!-- /.main-message -->
 
             <div class="quick-register">
@@ -74,7 +80,7 @@
               </label> <!-- /.input-wrapper -->
 
               <div class="input-wrapper cta-wrapper">
-                <a href="#" class="btn btn-primary" title="Registrate Gratis">Registrate Gratis</a>
+                <a href="#" title="Registrate Gratis" class="btn btn-primary jsOpenModal">Registrate Gratis</a>
               </div> <!-- /.input-wrapper -->
             </div> <!-- /.quick-register -->
 
@@ -83,6 +89,7 @@
 
         <section class="benefits-section clearfix lighter-bg">
           <div class="wrapper-960">
+            <a id="beneficios"></a>
             <h2 class="section-title"><strong>Beneficios</strong></h2>
 
             <div class="benefits-row clearfix">
@@ -152,7 +159,7 @@
               </label> <!-- /.input-wrapper -->
 
               <div class="input-wrapper cta-wrapper">
-                <a href="#" class="btn btn-primary" title="Empieza ahora">Empieza ahora</a>
+                <a href="#" title="Empieza ahora" class="btn btn-primary jsOpenModal">Empieza ahora</a>
               </div> <!-- /.input-wrapper -->
             </div> <!-- /.quick-register -->
             
@@ -161,7 +168,8 @@
 
         <section class="footer-section clearfix dark-bg">
           <div class="wrapper-960">
-            <a href="#" class="ir back-to-top" title="Volver arriba">Volver arriba</a>
+            <a id="contacto"></a>
+            <a href="#top" title="Volver arriba" class="ir back-to-top jsScrollTo">Volver arriba</a>
             <footer>
               <div class="contact-container">
                 <h2 class="section-title">Comunicate directamente</h2>
@@ -175,17 +183,17 @@
 
                 <form action="" class="footer-contact-form">
                   <fieldset>
-                    <div class="input-wrapper">
-                      <input type="text" placeholder="tu nombre">
-                    </div> <!-- /.input-wrapper -->
+                    <label for="contact_name" class="input-wrapper">
+                      <input id="contact_name" type="text" placeholder="tu nombre">
+                    </label> <!-- /.input-wrapper -->
 
-                    <div class="input-wrapper">
-                      <input type="email" placeholder="tu email">
-                    </div> <!-- /.input-wrapper -->
+                    <label for="contact_email" class="input-wrapper">
+                      <input id="contact_email" type="email" placeholder="tu email">
+                    </label> <!-- /.input-wrapper -->
 
-                    <div class="input-wrapper textarea-wrapper">
-                      <textarea name="" id="" placeholder="escribe tu mensaje"></textarea>
-                    </div> <!-- /.input-wrapper -->
+                    <label for="contact_message" class="input-wrapper textarea-wrapper">
+                      <textarea name="" id="contact_message" placeholder="escribe tu mensaje"></textarea>
+                    </label> <!-- /.input-wrapper -->
 
                     <div class="input-wrapper cta-wrapper">
                       <input type="submit" class="btn btn-primary" value="Enviar Mensaje" />
@@ -207,7 +215,7 @@
     <div class="modal-container">
       <div class="modal-overlay"></div> <!-- /.modal-overlay -->
       <div class="modal-popup">
-        <a href="#" class="btn btn-modal_close" title="Cerrar">X</a>
+        <a href="#" class="btn btn-modal_close jsCloseModal" title="Cerrar">X</a>
         <div class="modal-error_message">El registro no pudo ser realizado, debido a errores en la información del formulario, por favor corríjelos y vuelve a intentarlo.</div>
         <div class="modal-content">
           <div class="modal-logo">
@@ -223,14 +231,14 @@
 
               <div class="form-row clearfix">
                 <div class="form-cell width-1_2">
-                  <label for="register_name" class="input-wrapper required-field">
+                  <label for="register_name" class="input-wrapper required-field on-error">
                     <input id="register_name" type="text" placeholder="nombre">
                   </label>
                   <span class="form-field-error_message">la información de nombre no puede estar vacia.</span>
                 </div> <!-- /.form-cell -->
 
                 <div class="form-cell width-1_2">
-                  <label for="register_last_name" class="input-wrapper required-field">
+                  <label for="register_last_name" class="input-wrapper required-field ">
                     <input id="register_last_name" type="text" placeholder="apellido">
                   </label>
                   <span class="form-field-error_message"></span>
@@ -247,7 +255,7 @@
                 </div> <!-- /.form-cell -->
 
                 <div class="form-cell width-2_3">
-                  <label for="register_email" class="input-wrapper required-field">
+                  <label for="register_email" class="input-wrapper required-field on-error">
                     <input id="register_email" type="email" placeholder="email">
                   </label>
                   <span class="form-field-error_message">error en el correo electronico</span>
@@ -300,7 +308,7 @@
       </div> <!-- /.modal-popup -->
     </div> <!-- /.modal-container -->
 
-    <script src="js/main.js"></script>
+    <script src="js/ofi.js"></script>
 
   </body>
 </html>
