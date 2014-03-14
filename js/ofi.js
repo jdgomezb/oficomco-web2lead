@@ -20,6 +20,7 @@
       var pos = $(this).scrollTop();
 
       pinHeader(pos);
+      easyParallax(pos);
     });
   };
   
@@ -64,6 +65,12 @@
     }
   };
 
+  function easyParallax(pos) {
+    if ( pos < 590 ) {
+      $('.hero-section').css({backgroundPosition: "0 -"+ (pos/2) +"px"})
+    }
+  };
+
   function toggleHeaderCTA(bool) {
     if (bool) {
       $('.jsToggleCTA').addClass('btn btn-primary');
@@ -90,12 +97,12 @@
   function addFocus(e) {
     console.log('focus');
     $(this).closest('.input-wrapper').addClass('on-focus');
-  }
+  };
 
   function removeFocus(e) {
     console.log('blur');
     $(this).closest('.input-wrapper').removeClass('on-focus');
-  }
+  };
 
 
 })(window.jQuery);

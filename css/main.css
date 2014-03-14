@@ -244,7 +244,7 @@ section {
   position: relative;
 }
 .hero-section {
-  background: url(../img/hero_01.jpg) no-repeat 0 0;
+  background: url(../img/hero_01.jpg) no-repeat 0 -20px;
   height: 636px;
   padding: 54px 0 0;
   -moz-background-size: cover;
@@ -275,7 +275,7 @@ section {
 }
 .benefit-title {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   margin: 0 0 15px;
 }
@@ -285,6 +285,7 @@ section {
 .benefit-description {
   color: #666;
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.4em;
   text-align: center;
 }
